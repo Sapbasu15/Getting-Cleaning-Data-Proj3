@@ -20,7 +20,7 @@ GettingandCleaningData
     2. Extracts only the measurements on the mean and standard deviation for each measurement. 
     3. Uses descriptive activity names to name the activities in the data set
     4. Appropriately labels the data set with descriptive variable names. 
-    5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+    5. Creates a second, independent tidy data set data2 with the average of each variable for each activity and each subject. 
 
 
 ### Exactly
@@ -36,7 +36,6 @@ GettingandCleaningData
 * Select variables with "mean" and "std" and add "id"
 * Join "test" and "train" in one tidy table
 * Get means of features gruoped by activity and subject
-* Write second tidy data in txt file named 
-## data2.txt
+* Write second tidy data in txt file named :  data2.txt
 * Check the Run_analysis. R file for further details. 
 
