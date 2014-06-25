@@ -84,8 +84,7 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 * For more information about this dataset contact: activityrecognition@smartlab.ws
   
       
-Variables :
-
+## Variables :
 =======================================
 
 *      subject     
