@@ -36,7 +36,7 @@ GettingandCleaningData
 * Select variables with "mean" and "std" and add "id"
 * Join "test" and "train" in one tidy table
 * Get means of features gruoped by activity and subject
-* Write tidy data how txt file.
-
+* Write second tidy data in txt file named 
+## data2.txt
 * Check the Run_analysis. R file for further details. 
 
