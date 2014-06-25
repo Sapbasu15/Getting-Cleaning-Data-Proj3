@@ -36,7 +36,7 @@ xfull <- xfull[ ,as.integer(indx)];
 act <- read.table("activity_labels.txt",header=F);
 yfull$id <- 1:nrow(yfull);
 ynew <- merge(yfull,act,by.x="V1",by.y="V1");
-ynew <- ynew[order(newy$id),3];
+ynew <- ynew[order(ynew$id),3];
 
 
 # 4. Appropriately labels the data set with descriptive variable names. 
@@ -44,13 +44,14 @@ ynew <- ynew[order(newy$id),3];
 xfull <- cbind(subfull,ynew,xfull);
 name <- feat[indx,2];
 name <- c("subject","activity",as.character(name));
+name <- gsub("[^[:alnum:]]","",name);
 colnames(xfull) <- name;
-write.table(name,"./full/var_name.txt",sep=" ",append=F,row.names=T,col.names=F);
-write.table(xfull,"./full/full_data.txt",sep=" ",append=F,row.names=F,col.names=T,eol="\n",dec=".",na="NA");
+write.table(name,"./full/var_name.txt",sep=" ",append=F,quote=F,row.names=F,col.names=F);
+write.table(xfull,"./full/Full_Data.txt",sep=" ",quote=F,append=F,row.names=F,col.names=T,eol="\n",dec=".",na="NA");
 
 
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 data2 <- aggregate(xfull[,3:ncol(xfull)], by=list(subject=xfull$subject,activity=xfull$activity), FUN=mean);
-write.table(data2,"./full/data2.txt",sep=" ",append=F,row.names=F,col.names=T);
+write.table(data2,"./full/Mean_Tidy_Data.txt",sep=" ",quote=F,append=F,row.names=F,col.names=T);
 

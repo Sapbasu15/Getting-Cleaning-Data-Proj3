@@ -155,18 +155,18 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 *      fBodyGyro-std()-Z               
 *      fBodyGyro-meanFreq()-X      
 *      fBodyGyro-meanFreq()-Y       
-*      fBodyGyro-meanFreq()-Z       
-*      fBodyAccMag-mean()         
-*      fBodyAccMag-std()             
-*      fBodyAccMag-meanFreq()     
-*      fBodyBodyAccJerkMag-mean()          
-*      fBodyBodyAccJerkMag-std()           
-*      fBodyBodyAccJerkMag-meanFreq()          
-*      fBodyBodyGyroMag-mean()             
-*      fBodyBodyGyroMag-std()            
+*      fBodyGyro-meanFreq()-Z
+*      fBodyAccMag-mean()
+*      fBodyAccMag-std()
+*      fBodyAccMag-meanFreq()
+*      fBodyBodyAccJerkMag-mean() 
+*      fBodyBodyAccJerkMag-std()  
+*      fBodyBodyAccJerkMag-meanFreq()
+*      fBodyBodyGyroMag-mean()
+*      fBodyBodyGyroMag-std() 
 *      fBodyBodyGyroMag-meanFreq()          
-*      fBodyBodyGyroJerkMag-mean()              
-*      fBodyBodyGyroJerkMag-std()             
-*      fBodyBodyGyroJerkMag-meanFreq()            
+*      fBodyBodyGyroJerkMag-mean() 
+*      fBodyBodyGyroJerkMag-std() 
+*      fBodyBodyGyroJerkMag-meanFreq()
 
 
